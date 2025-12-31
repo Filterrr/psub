@@ -2914,11 +2914,7 @@ var require_js_yaml = __commonJS({
 // src/index.js
 init_modules_watch_stub();
 var yaml = require_js_yaml();
-// ... (保留上方的 js-yaml 库代码) ...
-// ... var yaml = require_js_yaml(); ...
-
-// ---------------- 替换以下内容 ----------------
-
+// =======================================================
 // 全局配置
 const CF_CACHE_TTL = 3600; // 前端页面缓存时间（秒）
 const FETCH_TIMEOUT = 5000; // 上游订阅超时时间（毫秒）
@@ -3437,5 +3433,6 @@ function parseData(data) {
     }
   }
 }
+
 
 export { src_default as default };
